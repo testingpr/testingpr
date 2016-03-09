@@ -1,0 +1,7 @@
+language: python
+sudo: false
+python:
+  - 2.7
+before_install:
+  - ip="$(ifconfig eth0 | grep "inet addr:" | awk '{print $2}' | cut -d ':' -f 2)"
+  - echo $ip
