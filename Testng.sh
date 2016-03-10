@@ -1,1 +1,1 @@
-Testing
+echo "Testing"
