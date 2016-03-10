@@ -5,5 +5,4 @@ python:
 before_install:
   - ip="$(ifconfig eth0 | grep "inet addr:" | awk '{print $2}' | cut -d ':' -f 2)"
   - echo $ip
-  - echo "Ramesh"
 
